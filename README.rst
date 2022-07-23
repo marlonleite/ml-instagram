@@ -14,7 +14,7 @@ Quick start
 
 2. Add the eviroments in ``settings.py``:
 
-.. code-block:: python
+.. code-block
     ML_INSTAGRAM_CLIENT_ID = os.environ["ML_INSTAGRAM_CLIENT_ID"]
     ML_INSTAGRAM_CLIENT_SECRET = os.environ("ML_INSTAGRAM_CLIENT_SECRET")
     ML_INSTAGRAM_REDIRECT_URI = os.environ("ML_INSTAGRAM_REDIRECT_URI")
