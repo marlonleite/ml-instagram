@@ -12,7 +12,7 @@ Quick start
         'ml_instagram',
     ]
 
-2. Add the eviroments in ``settings.py``::
+2. Add the eviroments in ``settings.py`` ::
 
    ML_INSTAGRAM_CLIENT_ID = os.environ["ML_INSTAGRAM_CLIENT_ID"]
    ML_INSTAGRAM_CLIENT_SECRET = os.environ["ML_INSTAGRAM_CLIENT_SECRET"]
