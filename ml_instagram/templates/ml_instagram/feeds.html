@@ -10,7 +10,7 @@
         <h4>{% trans "Siga-nos no Instagram" %}</h4>
     </div>
 
-    <div class="masonry-thumbs grid-container {% if not feeds_size %}grid-3{% endif %} clearfix" data-big="1">
+    <div class="masonry-thumbs grid-container grid-3 clearfix" data-big="1">
         {% for feed in feeds %}
             <a href="{{ feed.permalink }}" target="_blank" title="{{ feed.caption }}">
                 {% if feed.media_type == "VIDEO" %}
