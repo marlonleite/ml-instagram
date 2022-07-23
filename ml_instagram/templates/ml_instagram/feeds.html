@@ -1,0 +1,21 @@
+{% load i18n ml_instagram_feeds %}
+
+{% my_feeds 5 as feeds %}
+
+{% if feeds %}
+    <div class="fancy-title title-border">
+        <h4>{% trans "Siga-nos no Instagram" %}</h4>
+    </div>
+
+    <div class="masonry-thumbs grid-container grid-3 clearfix" data-big="1">
+        {% for feed in feeds %}
+            <a href="{{ feed.permalink }}" target="_blank" title="{{ feed.caption }}">
+                {% if feed.media_type == "VIDEO" %}
+                    <img class="image_fade" src="{{ feed.thumbnail_url }}" alt="{% trans "video" %}">
+                {% else %}
+                    <img class="image_fade" src="{{ feed.media_url }}" alt="{% trans "imagem" %}">
+                {% endif %}
+            </a>
+        {% endfor %}
+    </div>
+{% endif %}
