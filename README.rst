@@ -14,11 +14,11 @@ Quick start
 
 2. Add the eviroments in ``settings.py``:
 
-```
-ML_INSTAGRAM_CLIENT_ID = os.environ["ML_INSTAGRAM_CLIENT_ID"]
-ML_INSTAGRAM_CLIENT_SECRET = os.environ("ML_INSTAGRAM_CLIENT_SECRET")
-ML_INSTAGRAM_REDIRECT_URI = os.environ("ML_INSTAGRAM_REDIRECT_URI")
-```
+.. code-block:: python
+    ML_INSTAGRAM_CLIENT_ID = os.environ["ML_INSTAGRAM_CLIENT_ID"]
+    ML_INSTAGRAM_CLIENT_SECRET = os.environ("ML_INSTAGRAM_CLIENT_SECRET")
+    ML_INSTAGRAM_REDIRECT_URI = os.environ("ML_INSTAGRAM_REDIRECT_URI")
+
 
 3. Run ``python manage.py migrate`` to create the instagram models.
 
